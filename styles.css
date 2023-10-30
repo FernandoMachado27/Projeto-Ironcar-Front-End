@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 2rem;
+    padding: 2rem  5%;
     background-color: black;
     font-family: "Barlow";
 }
@@ -13,31 +13,28 @@
     font-size: 2.5rem;
 }
 
-.banner-subtitulo-bold, .banner-subtitulo {
+.banner-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .banner-imagem {
+    width: 100%;
+  }
+  
+  .banner-subtitulo {
+    position: absolute;
     color: #fdfdfd;
     font-size: 1.75rem;
-    position: absolute;
     text-shadow: 0 4px 4px black;
-    text-align: center;
     font-family: "Barlow";
-}
-
-.banner-subtitulo-bold {
-    font-weight: bold;
-    top: 800px;
-    width: 100%;
-    font-family: "Barlow Black";
-}
-
-.banner-subtitulo {
-    padding: 0.5rem 0.5rem;
-    top: 650px;
-}
-
-.banner-imagem {
-    height: fit-content;
-    width: 100%;
-}
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
 
 .cor-fundo, .escolhe-plano, .rodape, .titulo-rodape, .copyright, .container-page, form, .nome-container, .input-line-container, .input-line, .button-enviar, .formulario, .text-form, .text-form h1, .text-form p, .urus-e-texto, .urus-e-texto div, .urus-texto, .urus, .fotos-carros, .fotos, .fotos img, .menu-lista, .menu-link, .menu-link.ativo, .menu-link:hover, .menu-item, .menu-item:last-child .menu-link, .titulo-perguntas, .perguntas, .perguntas input, .perguntas .resposta, .perguntas label, .perguntas input:checked ~ .resposta, .descricao, .produtos, .produtos li, .produtos li:hover, .produtos li:active, .produtos li:hover h2, .produtos h2, .produtos p {
     font-family: "Barlow";
