@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin page</title>
     <link rel="stylesheet" href="..\styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body class="cor-fundo">
     <header class="cabecalho">
@@ -33,30 +34,17 @@
     <div>
         <h1 class="cadastro-title">Lista de veículos cadastrados</h1>
         <table class="tabela-cadastro">
-            <tr>
-                <th class="colunas-tabela">Nome</th>
-                <th class="colunas-tabela">Marca</th>
-                <th class="colunas-tabela">Modelo</th>
-                <th class="colunas-tabela">Ano</th>
-            </tr>
-            <tr>
-                <td>Fusca</td>
-                <td>Volkswagen</td>
-                <td>Fusca 1300</td>
-                <td>1972</td>
-            </tr>
-            <tr>
-                <td>Corolla</td>
-                <td>Toyota</td>
-                <td>Corolla XLI</td>
-                <td>2020</td>
-            </tr>
-            <tr>
-                <td>Golf</td>
-                <td>Volkswagen</td>
-                <td>Golf GTI</td>
-                <td>2019</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th class="colunas-tabela">Nome</th>
+                    <th class="colunas-tabela">Marca</th>
+                    <th class="colunas-tabela">Modelo</th>
+                    <th class="colunas-tabela">Ano</th>
+                </tr>
+            </thead>
+            <tbody class="carros__container">
+                
+            </tbody>
         </table>
     </div>
 </body>
