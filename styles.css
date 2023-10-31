@@ -296,3 +296,92 @@ form {
     font-size: 30px;
     color: white;
 }
+
+/*página do cadastro*/
+
+.box-cadastro {
+    background-color: black;
+    text-align: center;
+    font-family: "Barlow"
+  }
+  
+  .cadastro-title {
+    font-size: 2.5rem;
+    color: orange;
+    text-align: center;
+    margin-bottom: 2rem
+  }
+  
+  .cadastro-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .cadastro-form input[type="text"] {
+    width: 18.75rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 1.25rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    margin-bottom: 0.625rem;
+    margin-right: 0.625rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    color: orange;
+  }
+  
+  .cadastro-form button {
+    width: 18.75rem;
+    height: 4.5rem;
+    margin-bottom: 0.625rem;
+    margin-right: 0.625rem;
+    border-radius: 1.25rem;
+    background: orange;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Barlow";
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+input[type="text"]::placeholder {
+   color: rgb(255, 255, 255);
+}
+
+.cadastro-imagem {
+    width: 40%;
+  }
+
+  .tabela-cadastro {
+    font-family: "Barlow";
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 1.25rem;
+    color: black;
+    background-color:#f2f2f2
+  }
+  
+  .colunas-tabela {
+    font-family: "Barlow";
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .colunas-tabela:first-child {
+    border-top-left-radius: 1.25rem;
+  }
+  
+  .colunas-tabela:last-child {
+    border-top-right-radius: 1.25rem;
+  }
+  
+  .tabela-cadastro th,
+  .tabela-cadastro td {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+  }
