@@ -364,7 +364,9 @@ input[type="text"]::placeholder {
     background-color:#f2f2f2
   }
   
-  .colunas-tabela {
+  .colunas-tabela,
+  .editarButton,
+  .removerButton {
     font-family: "Barlow";
     background-color: orange;
     color: white;
@@ -379,8 +381,13 @@ input[type="text"]::placeholder {
   .colunas-tabela:last-child {
     border-top-right-radius: 1.25rem;
   }
+
+  .removerButton {
+    border-radius: 1.25rem;
+  }
   
   .tabela-cadastro th,
+  .removerButton,
   .tabela-cadastro td {
     border: 2px solid rgba(0, 0, 0, 0.1);
     padding: 8px;
