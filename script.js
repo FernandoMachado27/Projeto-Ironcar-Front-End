@@ -64,7 +64,7 @@ async function removerCarro(id) {
     }
 }
 
-// Função para criar uma linha na tabela com um botão "Remover"
+// Função para criar uma linha de carro com botões de ação
 function criarLinhaCarro(carro) {
     const tr = document.createElement("tr");
     tr.innerHTML = `
@@ -72,7 +72,9 @@ function criarLinhaCarro(carro) {
         <td>${carro.brand}</td>
         <td>${carro.model}</td>
         <td>${carro.year}</td>
-        <td><button class="removerButton" data-id="${carro.id}">Remover</button></td>
+        <td>
+            <button class="removerButton" data-id="${carro.id}">Remover</button>
+        </td>
     `;
 
     const removerButton = tr.querySelector(".removerButton");
@@ -102,4 +104,4 @@ async function buscarEMostrarCarros() {
     }
 }
 
-buscarEMostrarCarros()
+buscarEMostrarCarros();
