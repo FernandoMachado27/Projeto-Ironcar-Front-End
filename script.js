@@ -6,11 +6,13 @@ async function adicionarCarro() {
     const marcaInput = document.getElementById("marcaInput");
     const modeloInput = document.getElementById("modeloInput");
     const anoInput = document.getElementById("anoInput");
+    const opcaoInput = document.getElementById("opcaoInput")
 
     const nome = nomeInput.value;
     const marca = marcaInput.value;
     const modelo = modeloInput.value;
     const ano = anoInput.value;
+    const opcao = opcaoInput.value;
 
     try {
         const response = await fetch("http://localhost:8080/car", {
@@ -23,6 +25,7 @@ async function adicionarCarro() {
                 brand: marca,
                 model: modelo,
                 year: ano,
+                plan: opcao,
             }),
         });
 
@@ -34,6 +37,7 @@ async function adicionarCarro() {
             marcaInput.value = "";
             modeloInput.value = "";
             anoInput.value = "";
+            opcaoInput.value = "";
         } else {
             console.error("Falha ao adicionar o carro.");
         }
@@ -68,10 +72,12 @@ async function removerCarro(id) {
 function criarLinhaCarro(carro) {
     const tr = document.createElement("tr");
     tr.innerHTML = `
+        <td>${carro.id}</td>
         <td>${carro.name}</td>
         <td>${carro.brand}</td>
         <td>${carro.model}</td>
         <td>${carro.year}</td>
+        <td>${carro.plan}</td>
         <td>
             <button class="removerButton" data-id="${carro.id}">Remover</button>
         </td>
